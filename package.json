@@ -1,0 +1,30 @@
+{
+  "name": "yosocial01",
+  "version": "1.0.0",
+  "description": "Twitter alike",
+  "main": "modules/core/server/index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "prestart": "grunt",
+    "start": "modules/core/server/index.js",
+    "predev": "grunt",
+    "dev": "grunt watch & node-dev modules/core/server/index.js"
+  },
+  "author": "matteo",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "lodash": "^4.17.4",
+    "method-override": "^2.3.8",
+    "mongoose": "^4.9.1",
+    "resourcejs": "^1.6.1"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
